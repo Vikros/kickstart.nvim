@@ -157,9 +157,10 @@ vim.opt.cursorline = true
 -- Minimal number of screen lines to keep above and below the cursor.
 vim.opt.scrolloff = 10
 
--- Default shiftwidth an tabstop
-vim.opt.shiftwidth = 4
+-- Default shiftwidth and tabstop to 4, softabs by default
 vim.opt.tabstop = 4
+vim.opt.shiftwidth = 0
+vim.opt.expandtab = true
 
 -- [[ Basic Keymaps ]]
 --  See `:help vim.keymap.set()`
