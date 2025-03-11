@@ -616,6 +616,8 @@ require('lazy').setup({
         rust_analyzer = {},
         powershell_es = {},
         clojure_lsp = {},
+        cssls = {},
+        pylsp = {},
         -- ... etc. See `:help lspconfig-all` for a list of all the pre-configured LSPs
         --
         -- Some languages (like typescript) have entire language plugins that can be useful:
@@ -1014,6 +1016,11 @@ require('lazy').setup({
   { -- LuaLine Status-line
     'nvim-lualine/lualine.nvim',
     dependencies = { 'nvim-tree/nvim-web-devicons' },
+    opts = {},
+  },
+  {
+    'willothy/wezterm.nvim',
+    config = true,
     opts = {},
   },
   --  { -- Bufferline (tab bar)
